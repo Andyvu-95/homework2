@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- bài 1 -->
+  <div class="container d-flex justify-content-center my-5">
+    <div>
+        <h1>TÍNH TIỀN ĐIỆN</h1>
+        <div class="mb-3 w-50">
+            <label for="" class="form-label"></label>
+            <input type="text"
+              class="form-control" name="" id="hoTen" aria-describedby="helpId" placeholder="Họ và Tên">
+          </div>
+          <div class="mb-3 w-50">
+              <label for="" class="form-label"></label>
+              <input type="text"
+                class="form-control" name="" id="soDien" aria-describedby="helpId" placeholder="số Kw điện">
+          </div>
+          <button class="btn btn-danger my-4 p-3" id="tinhTien">Tính Tiền</button>
+    </div>
+    <div class="bg-success bg-opacity-75 p-4 text-white rounded-3 w-50 p-3 m-lg-3" >
+      <p class="text-bg-danger text-center"> Tiền điện được tính theo giá như sau: <br>
+        50kw đầu giá tiền 500đ/kw <br>
+        50kw kế tiếp 650đ/kw <br>
+        100kw Kế 850đ/kw <br>
+        150kw kế 1100đ/kw <br>
+        còn lại sẽ tính 1300đ/kw</p>
+      <div id="ketQua"></div>
+    </div>
+
+  </div>
+
+  <!-- bài 2 -->
+  <div class="container d-flex justify-content-center">
+    <div>
+      <h1>TÍNH TIỀN THUẾ THU NHẬP</h1>
+      <div class="mb-3 w-50">
+          <label for="" class="form-label"></label>
+          <input type="text"
+            class="form-control" name="" id="tenNguoiNopThue" aria-describedby="helpId" placeholder="Họ và Tên">
+        </div>
+        <div class="mb-3 w-50">
+            <label for="" class="form-label"></label>
+            <input type="number"
+              class="form-control" name="" id="tongThuNhap" aria-describedby="helpId" placeholder="Tổng Thu Nhập">
+        </div>
+        <div class="mb-3 w-50">
+          <label for="" class="form-label"></label>
+          <input type="number"
+            class="form-control" name="" id="nguoiPhuThuoc" aria-describedby="helpId" placeholder="Số Người Phụ Thuộc">
+      </div>
+        <button class="btn btn-danger my-4 p-3" id="tinhThue">Tinh Thuế</button>
+  </div>
+  <div class="bg-success bg-opacity-75 p-4 rounded-3 w-50 p-3 m-lg-3" >
+    <img src="./img/Screenshot 2023-06-04 133658.png" alt="" class="w-100">
+    <p class="text-danger">Chú thích: Mỗi người phụ thuộc bạn được trừ 4,000,000vnđ</p>
+    <div id="tienThue" class="text-white"></div>
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
